@@ -39,7 +39,8 @@ titles = df.tolist()
 
 sorted_titles = []
 for x in range(len(titles)):
-    title = re.sub('[*]?$', '', titles[x])
+    sentence = re.sub('[*]?$', '', titles[x])
+    title = re.sub("^\s+|\s+$", "", sentence, flags=re.UNICODE)
     sorted_titles.append(title)
 
 file = open(filename, "w")
