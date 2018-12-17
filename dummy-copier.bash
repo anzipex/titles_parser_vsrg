@@ -31,10 +31,8 @@ find_roms() {
     do
         if [[ -z "${result[$i]}" ]];
         then
-            list_not_found+=("$@")
             not_found=$((not_found+1))
-        else
-            found=$((found+1))
+            list_not_found+=("$@")
         fi
     done
 }
@@ -50,8 +48,9 @@ do
 done
 
 echo "Not found: $not_found titles"
-echo ""
+echo "---------------"
 echo "List not found:"
+echo "---------------"
 printf '%s\n' "${list_not_found[@]}"
 
 exit 0
