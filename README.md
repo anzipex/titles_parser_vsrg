@@ -29,5 +29,5 @@ Pump It Up Fiesta EX or Pump It Up Fiesta 2
 ###### dummy-copier.bash:
 Prototype script that copies titles.txt founded ROMs / ISOs (etc) to directory with sub-folder called **!Selected**
 ```
-username@hostname:~$ ./dummy-copier.bash ~/foo/titles-TurboGrafx-16.txt ~/bar/GoodPCE
+username@hostname:~$ ./dummy-copier.bash ~/foo/titles-TurboGrafx-16.txt ~/bar/GoodPCE/
 ```
