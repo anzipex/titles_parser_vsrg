@@ -1,12 +1,12 @@
 # titles_parser_vsrg
-For scrapping any Titles on pages from http://vsrecommendedgames.wikia.com to text file
+For scrapping any 'Titles' on pages http://vsrecommendedgames.wikia.com
 
 ###### Requirements:
 ```
-Python 3 or higher (i used Python 3.4.3)
-pip install requests (i used 2.2.1)
-pip install pandas (i used 0.22.0)
-pip install lxml (i used 3.3.3)
+Python 3 or higher (I used Python 3.4.3)
+pip install requests (I used 2.2.1)
+pip install pandas (I used 0.22.0)
+pip install lxml (I used 3.3.3)
 ```
 
 ###### Usage example:
@@ -27,7 +27,7 @@ Pump It Up Fiesta EX or Pump It Up Fiesta 2
 ```
 
 ###### dummy-copier:
-Prototype script that copies **titles-xxx.txt** founded ROMs / ISOs (etc) to directory with sub-folder called **!Selected**
+Prototype script that copies **titles-xxx.txt** founded ROMs / ISOs (etc) to directory with subfolder called **!Selected**
 ```
 username@hostname:~$ ./dummy-copier.bash ~/foo/titles-TurboGrafx-16.txt ~/bar/GoodPCE/
 ```
