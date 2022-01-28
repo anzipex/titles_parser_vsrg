@@ -26,7 +26,7 @@ find_roms() {
     find $ROMS_DIR -maxdepth 1 -type f -name "*$@*(J) [*!*].*" -exec cp {} "$ROMS_DIR/!Selected" \;
     find $ROMS_DIR -maxdepth 1 -type f -name "*$@*(E) [*!*].*" -exec cp {} "$ROMS_DIR/!Selected" \;
     result=$(find $ROMS_DIR -maxdepth 1 -type f -name "$@*(*)*.*")
-    
+
     for i in "${!result[@]}"
     do
         if [[ -z "${result[$i]}" ]];
@@ -37,8 +37,7 @@ find_roms() {
     done
 }
 
-for rom in "${!LIST_GAMES[@]}"
-do    
+for rom in "${!LIST_GAMES[@]}" do
     if [[ "${LIST_GAMES[$rom]}" == *"/"* ]]; then
         part_after=${LIST_GAMES[$rom]#* / }
         find_roms "$part_after"
